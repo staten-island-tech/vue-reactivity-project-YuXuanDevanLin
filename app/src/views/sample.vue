@@ -2,7 +2,7 @@
   <div class="container">
     <h1>Cookie Clicker</h1>
     <h2>{{ count }}</h2>
-    <img @click="increment" src="/BlackSeaBass.png" alt="" />
+    <img class="Blseba" @click="increment" src="/BlackSeaBass.png" alt="" />
     <button>reset</button>
   </div>
 </template>
@@ -24,6 +24,10 @@ img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 40vh;
+  height: 100vh;
+}
+.Blseba {
+  cursor: pointer;
+
 }
 </style>
