@@ -3,15 +3,18 @@
     <h1>Cookie Clicker</h1>
     <h2>{{ count }}</h2>
     <img class="Blseba" @click="increment" src="/BlackSeaBass.png" alt="" />
-    <button>reset</button>
+    <button @click="reset">reset</button>
   </div>
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import {ref} from 'vue'
 const count = ref(0)
 function increment() {
   count.value++
+}
+function reset() {
+  count.value = 0
 }
 </script>
 
@@ -24,10 +27,6 @@ img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-}
-.Blseba {
-  cursor: pointer;
-
+  height: 40vh;
 }
 </style>
